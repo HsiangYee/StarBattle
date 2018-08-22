@@ -1,0 +1,183 @@
+*{
+    font-family: "Arial";
+}
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#canvas_wrap{
+    position: relative;
+    width: 960px;
+    height: 600px;
+}
+#canvas_wrap canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0px;
+}
+#fule, #fire, #score, #time, #font_size{
+    color: #fff;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#fule{
+    color: #000;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    width:40px;
+    height:40px;
+}
+#score{
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    left: 304px;
+    top: 10px;
+    width:80px;
+    height:80px;
+}
+#time{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    left: 665px;
+    top: 10px;
+    width:80px;
+    height:80px;
+}
+#font_size{
+    position: absolute;
+    left: 290px;
+    top: 550px;
+    width:400px;
+    height:50px;
+}
+#fire{
+    position: absolute;
+    left: 800px;
+    top: 440px;
+    width:120px;
+    height:120px;
+}
+#touch_layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 960px;
+    height: 600px;
+}
+
+#start_battle_interface{
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 270px;
+    top: 190px;
+    width: 400px;
+    height: 100px;
+    background: #eee;
+    border-radius: 1.5em;
+}
+#rule_interface{
+    padding:10px;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    width: 640px;
+    height: 500px;
+    background: #eee;
+    border-radius: 1.5em;
+}
+#title_area{
+    font-size: 30px;
+    text-align: center;
+    border-bottom:2px #000 solid;
+}
+#rule_area{
+    background: #fff;
+    font-size: 17px;
+    border:1px gray solid;
+    border-radius: 10px;
+    margin:10px 0 0 0;
+    padding:5px;
+    line-height:22px;
+}
+#button_area{
+    text-align: center;
+}
+button{
+    color:#fff;
+    width:150px;
+    height:50px;
+    margin:10px 0 0 0;
+    border:none;
+    border-radius:1.5em;
+    position: relative;
+    overflow: hidden;
+}
+.button1{
+    background: red;
+}
+.button2{
+    background: #369;
+}
+button::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50px;
+    opacity: .8;
+}
+button:hover{
+    background: #f19e0d;
+}
+button:hover::after{
+    background-image: radial-gradient(circle, #ace 10%, transparent 10%);
+    transform: scale(10, 10);
+    opacity: .0;
+    transition: 1s;
+}
+
+#inter_name{
+    padding: 10px;
+    position: absolute;
+    left: 220px;
+    top: 160px;
+    width: 500px;
+    height: 150px;
+    background: #eee;
+    border-radius: 1.5em;
+}
+#title{
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px gray solid;
+}
+#name{
+    margin:10px 0 0 0;
+    padding:5px;
+    font-size: 18px;
+    width:100%;
+    height:40px;
+    border-radius: 5px;
+    border:2px gray solid;
+}
+#Continue{
+    margin:10px 0 0 35%;
+    background: red;
+}
